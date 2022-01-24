@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: 383faba601a51dc3cd0536823cff47c8a187e5a0355c5b7d104859620c0444ad
+  sha256: 6ed9fc418a4d02d0ea679214e7d114e1d7716be2ee6ccb5355c66496622f1a63
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - category_encoders >=2.3.0
     - dataclasses >=0.6
     - ipykernel >=5.3.0
-    - ipython >=7.15.0
+    - ipython >=5.5.0
     - ipywidgets >=7.6.5
     - jsonpickle >=2
     - matplotlib-base >=3.2.2
