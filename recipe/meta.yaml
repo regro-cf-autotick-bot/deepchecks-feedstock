@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: b3a85448402e585cd63e700bce1cea01cdb20f922f7b9ca3db2e40862a869a02
+  sha256: 5e5927caccd448d1c64980fdf750c3da34e8d5fb245fdaee1a0320b950b71d90
 
 build:
   noarch: python
