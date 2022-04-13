@@ -38,7 +38,6 @@ requirements:
     - typing-extensions >=3.7.4.3
 
 test:
-  source_files: tests
   imports:
     - deepchecks
     - deepchecks.base
