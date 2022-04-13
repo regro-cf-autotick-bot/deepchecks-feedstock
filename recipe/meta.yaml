@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: a60cf6920673283314daea567c646d25b1873dfb648d7a57f4f666c4024db4ff
+  sha256: e8574e01a79b344b3405652a1229e7748e10762acea60fa7a666abbeaaff8e96
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - matplotlib-base >=3.2.2
     - numpy >=1.19
     - pandas >=1.1.5
-    - plotly >=5.5.0
+    - plotly >=5.5.0,<5.6
     - python >=3.6
     - scikit-learn >=0.24.2
     - scipy >=1.4.1
@@ -38,27 +38,32 @@ requirements:
     - typing-extensions >=3.7.4.3
 
 test:
-  source_files: tests
   imports:
     - deepchecks
-    - deepchecks.base
-    - deepchecks.checks
-    - deepchecks.checks.distribution
-    - deepchecks.checks.integrity
-    - deepchecks.checks.methodology
-    - deepchecks.checks.overview
-    - deepchecks.checks.performance
+    - deepchecks.analytics
+    - deepchecks.core
+    - deepchecks.core.check_utils
     - deepchecks.datasets
-    - deepchecks.datasets.regression
-    - deepchecks.suites
+    - deepchecks.tabular
+    - deepchecks.tabular.checks
+    - deepchecks.tabular.checks.distribution
+    - deepchecks.tabular.checks.integrity
+    - deepchecks.tabular.checks.methodology
+    - deepchecks.tabular.checks.overview
+    - deepchecks.tabular.checks.performance
+    - deepchecks.tabular.datasets
+    - deepchecks.tabular.datasets.classification
+    - deepchecks.tabular.datasets.regression
+    - deepchecks.tabular.suites
+    - deepchecks.tabular.utils
     - deepchecks.utils
+    - deepchecks.utils.distribution
+    - deepchecks.utils.performance
+    
   commands:
     - pip check
-    - pytest -vvv --capture=tee-sys tests  # [not win]
   requires:
     - pip
-    - pyhamcrest  # [not win]
-    - pytest  # [not win]
 
 about:
   home: https://github.com/deepchecks/deepchecks
