@@ -40,17 +40,37 @@ requirements:
 test:
   imports:
     - deepchecks
-    - deepchecks.base
-    - deepchecks.checks
-    - deepchecks.checks.distribution
-    - deepchecks.checks.integrity
-    - deepchecks.checks.methodology
-    - deepchecks.checks.overview
-    - deepchecks.checks.performance
+    - deepchecks.analytics
+    - deepchecks.core
+    - deepchecks.core.check_utils
     - deepchecks.datasets
-    - deepchecks.datasets.regression
-    - deepchecks.suites
+    - deepchecks.tabular
+    - deepchecks.tabular.checks
+    - deepchecks.tabular.checks.distribution
+    - deepchecks.tabular.checks.integrity
+    - deepchecks.tabular.checks.methodology
+    - deepchecks.tabular.checks.overview
+    - deepchecks.tabular.checks.performance
+    - deepchecks.tabular.datasets
+    - deepchecks.tabular.datasets.classification
+    - deepchecks.tabular.datasets.regression
+    - deepchecks.tabular.suites
+    - deepchecks.tabular.utils
     - deepchecks.utils
+    - deepchecks.utils.distribution
+    - deepchecks.utils.performance
+    - deepchecks.vision
+    - deepchecks.vision.checks
+    - deepchecks.vision.checks.distribution
+    - deepchecks.vision.checks.methodology
+    - deepchecks.vision.checks.performance
+    - deepchecks.vision.datasets
+    - deepchecks.vision.datasets.classification
+    - deepchecks.vision.datasets.detection
+    - deepchecks.vision.metrics_utils
+    - deepchecks.vision.suites
+    - deepchecks.vision.utils
+    
   commands:
     - pip check
   requires:
