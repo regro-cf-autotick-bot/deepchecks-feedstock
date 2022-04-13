@@ -54,11 +54,8 @@ test:
     - deepchecks.utils
   commands:
     - pip check
-    - pytest -vvv --capture=tee-sys tests  # [not win]
   requires:
     - pip
-    - pyhamcrest  # [not win]
-    - pytest  # [not win]
 
 about:
   home: https://github.com/deepchecks/deepchecks
