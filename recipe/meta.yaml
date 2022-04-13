@@ -59,17 +59,6 @@ test:
     - deepchecks.utils
     - deepchecks.utils.distribution
     - deepchecks.utils.performance
-    - deepchecks.vision
-    - deepchecks.vision.checks
-    - deepchecks.vision.checks.distribution
-    - deepchecks.vision.checks.methodology
-    - deepchecks.vision.checks.performance
-    - deepchecks.vision.datasets
-    - deepchecks.vision.datasets.classification
-    - deepchecks.vision.datasets.detection
-    - deepchecks.vision.metrics_utils
-    - deepchecks.vision.suites
-    - deepchecks.vision.utils
     
   commands:
     - pip check
