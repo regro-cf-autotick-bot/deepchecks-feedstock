@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: e8574e01a79b344b3405652a1229e7748e10762acea60fa7a666abbeaaff8e96
+  sha256: b5144f5ab13e991dc436aa3bd94616e51780ddb8dc033a3c16c6dea4c24d6e2e
 
 build:
   noarch: python
@@ -59,7 +59,7 @@ test:
     - deepchecks.utils
     - deepchecks.utils.distribution
     - deepchecks.utils.performance
-    
+
   commands:
     - pip check
   requires:
