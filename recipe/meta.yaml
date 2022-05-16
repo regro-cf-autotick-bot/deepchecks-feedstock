@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: e8574e01a79b344b3405652a1229e7748e10762acea60fa7a666abbeaaff8e96
+  sha256: b8e2aa628f06f87762dc33eeb14999bacd5ce1e2eab9856360e4c566a164adaf
 
 build:
   noarch: python
@@ -25,11 +25,12 @@ requirements:
     - ipykernel >=5.3.0
     - ipython >=7.15.0,<8
     - ipywidgets >=7.6.5
-    - jsonpickle >=2
-    - matplotlib-base >=3.2.2
+    - jsonpickle >=2.1.0
+    - matplotlib-base >=3.3.3
     - numpy >=1.19
     - pandas >=1.1.5
     - plotly >=5.5.0,<5.6
+    - pynomaly >=0.3.3
     - python >=3.6
     - scikit-learn >=0.24.2
     - scipy >=1.4.1
@@ -59,7 +60,7 @@ test:
     - deepchecks.utils
     - deepchecks.utils.distribution
     - deepchecks.utils.performance
-    
+
   commands:
     - pip check
   requires:
