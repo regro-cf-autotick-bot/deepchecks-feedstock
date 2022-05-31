@@ -44,14 +44,21 @@ test:
     - deepchecks.analytics
     - deepchecks.core
     - deepchecks.core.check_utils
+    - deepchecks.core.serialization
+    - deepchecks.core.serialization.check_failure
+    - deepchecks.core.serialization.check_result
+    - deepchecks.core.serialization.dataframe 
+    - deepchecks.core.serialization.suite_result
     - deepchecks.datasets
     - deepchecks.tabular
     - deepchecks.tabular.checks
+    - deepchecks.tabular.checks.data_integrity
     - deepchecks.tabular.checks.distribution
-    - deepchecks.tabular.checks.integrity
     - deepchecks.tabular.checks.methodology
+    - deepchecks.tabular.checks.model_evaluation
     - deepchecks.tabular.checks.overview
     - deepchecks.tabular.checks.performance
+    - deepchecks.tabular.checks.train_test_validation
     - deepchecks.tabular.datasets
     - deepchecks.tabular.datasets.classification
     - deepchecks.tabular.datasets.regression
