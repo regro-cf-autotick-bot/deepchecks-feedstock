@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.6.4" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: b8e2aa628f06f87762dc33eeb14999bacd5ce1e2eab9856360e4c566a164adaf
+  sha256: d8f3cfe98853af1c2035584c435d5f3e82cf976bc8ab7398416f5a7862bef284
 
 build:
   noarch: python
@@ -44,14 +44,21 @@ test:
     - deepchecks.analytics
     - deepchecks.core
     - deepchecks.core.check_utils
+    - deepchecks.core.serialization
+    - deepchecks.core.serialization.check_failure
+    - deepchecks.core.serialization.check_result
+    - deepchecks.core.serialization.dataframe 
+    - deepchecks.core.serialization.suite_result
     - deepchecks.datasets
     - deepchecks.tabular
     - deepchecks.tabular.checks
+    - deepchecks.tabular.checks.data_integrity
     - deepchecks.tabular.checks.distribution
-    - deepchecks.tabular.checks.integrity
     - deepchecks.tabular.checks.methodology
+    - deepchecks.tabular.checks.model_evaluation
     - deepchecks.tabular.checks.overview
     - deepchecks.tabular.checks.performance
+    - deepchecks.tabular.checks.train_test_validation
     - deepchecks.tabular.datasets
     - deepchecks.tabular.datasets.classification
     - deepchecks.tabular.datasets.regression
