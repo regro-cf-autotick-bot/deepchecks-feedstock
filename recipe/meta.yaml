@@ -1,5 +1,5 @@
 {% set name = "deepchecks" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/deepchecks-{{ version }}.tar.gz
-  sha256: d8f3cfe98853af1c2035584c435d5f3e82cf976bc8ab7398416f5a7862bef284
+  sha256: ed268e65dc942647cb153178a801cfbbd63d913b95a06972236048c31e26e879
 
 build:
   noarch: python
@@ -47,7 +47,7 @@ test:
     - deepchecks.core.serialization
     - deepchecks.core.serialization.check_failure
     - deepchecks.core.serialization.check_result
-    - deepchecks.core.serialization.dataframe 
+    - deepchecks.core.serialization.dataframe
     - deepchecks.core.serialization.suite_result
     - deepchecks.datasets
     - deepchecks.tabular
